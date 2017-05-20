@@ -9,7 +9,7 @@ public class FirstTestCase {
 	// Create a new instance of the Firefox driver
 			System.setProperty("webdriver.gecko.driver", "C:\\geckodriver.exe");
 			WebDriver driver = new FirefoxDriver();		
-			//teste
+			
 	//Launch the Online Store Website
 			driver.get("http://www.store.demoqa.com");
 		 
