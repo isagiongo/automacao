@@ -22,19 +22,19 @@ public class Pratica1 {
 		int titleLength = driver.getTitle().length();
 
 		// Printing Title & Title length in the Console window
-		System.out.println("Title of the page is : " + title);
-		System.out.println("Length of the title is : "+ titleLength);
+		System.out.println("O Título do Site é : " + title);
+		System.out.println("O comprimento do Título é : "+ titleLength);
 
 		// Storing URL in String variable
 		String actualUrl = driver.getCurrentUrl();
 
 		if (actualUrl.equals(url)){
-			System.out.println("Verification Successful - The correct Url is opened.");
+			System.out.println("Sucesso na Verificação! - A URL correta foi aberta.");
 		}else{
-			System.out.println("Verification Failed - An incorrect Url is opened.");
+			System.out.println("Falha na Verificação! :( - Outra URL foi aberta.");
 			//In case of Fail, you like to print the actual and expected URL for the record purpose
-			System.out.println("Actual URL is : " + actualUrl);
-			System.out.println("Expected URL is : " + url);
+			System.out.println("URL atual : " + actualUrl);
+			System.out.println("URL esperada : " + url);
 		}
 
 		// Storing Page Source in String variable
@@ -44,7 +44,7 @@ public class Pratica1 {
 		int pageSourceLength = pageSource.length();
 
 		// Printing length of the Page Source on console
-		System.out.println("Total length of the Pgae Source is : " + pageSourceLength);
+		System.out.println("Comprimento total do conteúdo da página é : " + pageSourceLength);
 
 		//Closing browser
 		driver.close();
