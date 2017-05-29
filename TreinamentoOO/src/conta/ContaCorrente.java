@@ -18,8 +18,8 @@ public class ContaCorrente extends Conta {
 	}
 	
 	@Override
-	public void sacar(double valor) {
-		super.sacar(valor+(valor*0.05));
+	public void sacar(double valorSaque) {
+		super.sacar(valorSaque+(valorSaque*0.05));
 	}
 
 }

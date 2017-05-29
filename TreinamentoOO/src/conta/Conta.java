@@ -14,12 +14,12 @@ public abstract class Conta {
 		saldo = saldo + valor;
 	}
 
-	public void sacar(double valor) {
-		if (valor > 1000.0) {
+	public void sacar(double valorSaque) {
+		if (valorSaque > 1000.0) {
 			throw new IllegalArgumentException("Limite para saque excedido");
 		} else {
-			if (saldo >= valor) {
-				saldo = saldo - valor;
+			if (saldo >= valorSaque) {
+				saldo = saldo - valorSaque;
 			} else {
 				throw new IllegalArgumentException("Saldo insuficiente para saque. O saldo é " + saldo);
 			}

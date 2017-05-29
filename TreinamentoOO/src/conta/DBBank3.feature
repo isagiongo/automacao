@@ -16,7 +16,7 @@ Cenário: Deve efetuar a consulta de saldo de uma conta no auto-atendimento
 	Dado que quero saber o saldo atual da conta
 	E possuo o saldo de R$ 45,00
 	Quando solicitar o saldo
-	Entao devo receber a mensagem "Seu saldo atual Ã© de R$ 45,00"
+	Entao devo receber a mensagem "Seu saldo atual é de R$ 45,00"
 	E o comprovante deve ser impresso
 
 Cenário: Deve efetuar o saque de uma conta
@@ -24,14 +24,14 @@ Cenário: Deve efetuar o saque de uma conta
 	Quando efetuar o saque
 	Entao devo receber o dinheiro solicitado
 	
-Cenário: Deve efetuar depÃ³sito na conta de um cliente no caixa
-	Dado que sou cliente com saldo de R$ 30,00 e efetuo um depÃ³sito no valor de R$ 70,00 
-	Quando efetuar o depÃ³sito
+Cenário: Deve efetuar depósito na conta de um cliente no caixa
+	Dado que sou cliente com saldo de R$ 30,00 e efetuo um depósito no valor de R$ 70,00 
+	Quando efetuar o depósito
 	Entao devo ter na conta o saldo no valor de R$ 100,00
-	E a mensagem "OperaÃ§Ã£o efetuada com sucesso."
+	E a mensagem "Operação efetuada com sucesso."
 
-Cenário: Deve efetuar depÃ³sito na conta de um cliente no auto-atendimento
-	Dado que sou cliente com saldo de R$ 30,00 e efetuo um depÃ³sito no valor de R$ 70,00 
-	Quando efetuar o depÃ³sito
-	Entao devo receber a mensagem "OperaÃ§Ã£o efetuada com sucesso."
-	E a mensagem "O valor entrarÃ¡ na conta em atÃ© 24 Hrs."
+Cenário: Deve efetuar depósito na conta de um cliente no auto-atendimento
+	Dado que sou cliente com saldo de R$ 30,00 e efetuo um depósito no valor de R$ 70,00 
+	Quando efetuar o depósito
+	Entao devo receber a mensagem "Operação efetuada com sucesso."
+	E a mensagem "O valor entrará na conta em até 24 Hrs."

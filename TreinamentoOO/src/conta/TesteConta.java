@@ -10,10 +10,15 @@ public class TesteConta {
 		
 		ContaCorrente contaJoao = new ContaCorrente(joao,1000);
 				
-		contaJoao.sacar(940);
-		contaJoao.mostrarSaldo();
-
+		//contaJoao.sacar(940);
 		//contaJoao.mostrarSaldo();
+		
+		Atendimento caixa = new Caixa(contaJoao);
+		
+		caixa.depositar(3000);
+		caixa.consultarSaldo();
+		caixa.sacar(800);		
+		caixa.consultarSaldo();
 		
 		//Cliente maria = new Cliente ();
 		//maria.nome = "Maria de Souza";
